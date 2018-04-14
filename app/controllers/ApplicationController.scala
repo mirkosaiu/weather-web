@@ -13,7 +13,7 @@ import scala.reflect.io.File
  * application's home page.
  */
 @Singleton
-class ApplicationController @Inject()(cc: ControllerComponents, usersDAO: UsersDAO, assets: Assets) extends AbstractController(cc) {
+class ApplicationController @Inject()(cc: ControllerComponents, assets: Assets) extends AbstractController(cc) {
 
 
 

@@ -11,12 +11,12 @@ libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
 
-libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-slick" % "3.0.0",
-  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.0"
-)
+//libraryDependencies ++= Seq(
+//  "com.typesafe.play" %% "play-slick" % "3.0.0",
+//  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.0"
+//)
 
-libraryDependencies += "org.postgresql" % "postgresql" % "42.2.1"
+//libraryDependencies += "org.postgresql" % "postgresql" % "42.2.1"
 
 
 
@@ -25,5 +25,4 @@ enablePlugins(JavaServerAppPackaging)
 enablePlugins(DockerPlugin)
 
 import com.typesafe.sbt.packager.docker._
-// use += to add an item to a Sequence
 dockerCommands += Cmd("EXPOSE", "9000")
