@@ -1,4 +1,4 @@
-name := """weather"""
+name := """weather-web"""
 organization := "mirko"
 
 version := "1.0-SNAPSHOT"
@@ -17,3 +17,13 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "org.postgresql" % "postgresql" % "42.2.1"
+
+
+
+enablePlugins(JavaAppPackaging)
+enablePlugins(JavaServerAppPackaging)
+enablePlugins(DockerPlugin)
+
+import com.typesafe.sbt.packager.docker._
+// use += to add an item to a Sequence
+dockerCommands += Cmd("EXPOSE", "9000")

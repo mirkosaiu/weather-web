@@ -1,0 +1,57 @@
+@font-face {
+    font-family: pt-sans-regular;
+    src: url(../PT_Sans/PT_Sans-Web-Regular.ttf);
+}
+
+
+body {
+  font-family: 'pt-sans-regular' !important;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+
+.background {
+  background-image: url(../images/bahamas-cloud-break-summer-sun-sky-fresh-air-holiday-swimming-widescreen-free-1805x1015.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 30px;
+}
+
+.main-box {
+  display: block;
+  width: 1024px;
+  margin: auto;
+  overflow: scroll;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  min-height: 750px;
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+}
+
+.centered-inline {
+  text-align: center;
+}
+
+.warning-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: bottom;
+}
+
+.space {
+  display: block;
+  height: 20px;
+}

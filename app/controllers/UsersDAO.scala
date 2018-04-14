@@ -20,6 +20,8 @@ class UsersTable(tag: Tag) extends Table[User](tag, "users") {
   def mobile = column[String]("mobile")
   def email = column[String]("email")
   def * = (id, firstName, lastName, mobile, email) <> (User.tupled, User.unapply)
+
+
 }
 
 class UsersDAO @Inject() (protected val dbConfigProvider: DatabaseConfigProvider, cc: ControllerComponents, config: Configuration)

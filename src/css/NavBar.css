@@ -1,0 +1,52 @@
+
+
+.nav-bar {
+  background-color: #171717;
+  border-bottom: 2px solid #000;
+  color: #fff;
+
+  .nav-bar-content {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    @media (max-width: 1024px) {
+      width: auto;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+    .nav-bar-left {
+      display: flex;
+      width: 20%;
+    }
+
+    .nav-bar-right {
+      justify-content: flex-end;
+      display: flex;
+      width: 80%;
+    }
+
+    .nav-bar-element {
+      padding: 20px 15px;
+      text-align: center;
+
+      .brand {
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 17px;
+
+        background: -webkit-linear-gradient(#000, #00adff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &.link:hover {
+        background-color: #000;
+      }
+    }
+  }
+}

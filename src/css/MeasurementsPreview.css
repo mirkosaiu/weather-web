@@ -1,0 +1,21 @@
+.measurements-preview-titles {
+  display: flex;
+}
+.measurements-preview-measures {
+  display: flex;
+}
+.measurements-preview-item {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0;
+  border: 1px solid;
+  margin: 0 15px;
+  width: 20%;
+}
+
+.measurements-preview-item-title {
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 20%;
+}
