@@ -15,3 +15,12 @@ libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2
 
 // Adds additional packages into conf/routes
 // play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
+
+
+
+enablePlugins(JavaAppPackaging)
+enablePlugins(JavaServerAppPackaging)
+enablePlugins(DockerPlugin)
+
+import com.typesafe.sbt.packager.docker._
+dockerCommands += Cmd("EXPOSE", "9000")
