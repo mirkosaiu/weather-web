@@ -24,3 +24,4 @@ enablePlugins(DockerPlugin)
 
 import com.typesafe.sbt.packager.docker._
 dockerCommands += Cmd("EXPOSE", "9000")
+dockerCommands += Cmd("EXPOSE", "9443")
