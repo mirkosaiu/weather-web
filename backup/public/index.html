@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Weather.</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="text/javascript" src="main.bundle.js"></script></body>
+</html>

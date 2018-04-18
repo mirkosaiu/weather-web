@@ -1,28 +1,17 @@
-name := """weather-web"""
-organization := "mirko"
+name := """play-scala-seed"""
+organization := "com.example"
 
 version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.4"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
+// Adds additional packages into Twirl
+//TwirlKeys.templateImports += "com.example.controllers._"
 
-//libraryDependencies ++= Seq(
-//  "com.typesafe.play" %% "play-slick" % "3.0.0",
-//  "com.typesafe.play" %% "play-slick-evolutions" % "3.0.0"
-//)
-
-//libraryDependencies += "org.postgresql" % "postgresql" % "42.2.1"
-
-
-
-enablePlugins(JavaAppPackaging)
-enablePlugins(JavaServerAppPackaging)
-enablePlugins(DockerPlugin)
-
-import com.typesafe.sbt.packager.docker._
-dockerCommands += Cmd("EXPOSE", "9000")
+// Adds additional packages into conf/routes
+// play.sbt.routes.RoutesKeys.routesImport += "com.example.binders._"
