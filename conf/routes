@@ -4,14 +4,13 @@
 # ~~~~
 
 
+GET     /        controllers.HomeController.playIndex
 
-GET        /             controllers.HomeController.index()
-GET        /*file        controllers.HomeController.assetOrDefault(file)
+#GET     /             controllers.HomeController.index()
+#GET     /*file        controllers.HomeController.assetOrDefault(file)
 
 
 
-# An example controller showing a sample home page
-GET     /index                           controllers.HomeController.playIndex
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
