@@ -28,26 +28,26 @@ dockerCommands += Cmd("EXPOSE", "9443")
 
 
 
-javaOptions in Docker ++= Seq(
-  // JVM memory tuning
-  "-J-Xmx1024m",
-  "-J-Xms512m",
-
-  // Since play uses separate pidfile we have to provide it with a proper path
-  // name of the pid file must be play.pid
-  s"-Dpidfile.path=/var/run/${packageName.value}/play.pid",
-
-  // alternative, you can remove the PID file
-  // s"-Dpidfile.path=/dev/null",
-
-  // Use separate configuration file for production environment
-  s"-Dconfig.file=/usr/share/${packageName.value}/conf/production.conf",
-
-  // Use separate logger configuration file for production environment
-  s"-Dlogger.file=/usr/share/${packageName.value}/conf/production-logger.xml",
-
-  // You may also want to include this setting if you use play evolutions
-  "-DapplyEvolutions.default=true",
-
-  "-Dplay.http.secret.key=]<tm21RMDXj2@59@nnnR=<4RiWE^AoQo?yYpnrMSbW7WPfokVBQ>RUuCTAnQ:T:i"
-)
+//javaOptions in Universal ++= Seq(
+//  // JVM memory tuning
+//  "-J-Xmx1024m",
+//  "-J-Xms512m",
+//
+//  // Since play uses separate pidfile we have to provide it with a proper path
+//  // name of the pid file must be play.pid
+//  s"-Dpidfile.path=/var/run/${packageName.value}/play.pid",
+//
+//  // alternative, you can remove the PID file
+//  // s"-Dpidfile.path=/dev/null",
+//
+//  // Use separate configuration file for production environment
+//  s"-Dconfig.file=/usr/share/${packageName.value}/conf/production.conf",
+//
+//  // Use separate logger configuration file for production environment
+//  s"-Dlogger.file=/usr/share/${packageName.value}/conf/production-logger.xml",
+//
+//  // You may also want to include this setting if you use play evolutions
+//  "-DapplyEvolutions.default=true",
+//
+//  "-Dplay.http.secret.key=]<tm21RMDXj2@59@nnnR=<4RiWE^AoQo?yYpnrMSbW7WPfokVBQ>RUuCTAnQ:T:i"
+//)
