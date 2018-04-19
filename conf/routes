@@ -5,8 +5,8 @@
 
 
 
-GET        /             controllers.ApplicationController.index()
-GET        /*file        controllers.ApplicationController.assetOrDefault(file)
+GET        /             controllers.HomeController.index()
+GET        /*file        controllers.HomeController.assetOrDefault(file)
 
 
 
