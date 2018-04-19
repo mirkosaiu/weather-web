@@ -18,7 +18,7 @@ class HomeController @Inject()(cc: ControllerComponents, assets: Assets) extends
    * will be called when the application receives a `GET` request with
    * a path of `/`.
    */
-  def playIndex() = Action { implicit request: Request[AnyContent] =>
+  def playIndex = Action { implicit request: Request[AnyContent] =>
     Ok(views.html.index())
   }
 

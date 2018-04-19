@@ -1,16 +1,6 @@
-@*
-* This template is called from the `index` template. This template
-* handles the rendering of the page header and body tags. It takes
-* two arguments, a `String` for the title of the page and an `Html`
-* object to insert into the body of the page.
-*@
-@(title: String)(content: Html)
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <script>
       // Check that service workers are registered
       if ('serviceWorker' in navigator) {
@@ -22,9 +12,8 @@
     </script>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <title>Weather.</title>
-</head>
-<body>
-<div id="root"></div>
-<script type="text/javascript" src="main.bundle.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+  <script type="text/javascript" src="main.bundle.js"></script></body>
 </html>
