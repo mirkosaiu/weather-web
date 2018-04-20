@@ -13,6 +13,7 @@ import rootReducer from 'Reducers'
 import Home from 'Components/Home';
 import Statistics from 'Components/Statistics';
 import Archive from 'Components/Archive';
+import Station from 'Components/Station';
 import PageNotFound from 'Components/PageNotFound';
 import MessageForMobileDevices from 'Components/MessageForMobileDevices';
 import NavBar from 'Components/NavBar';
@@ -39,6 +40,7 @@ const App = () => {
             <Route exact path="/" component={Home}/>
             <Route exact path="/statistics" component={Statistics}/>
             <Route exact path="/archive" component={Archive}/>
+            <Route exact path="/the-station" component={Station}/>
             <Route exact component={PageNotFound}/>
           </Switch>
 

@@ -28,6 +28,12 @@ const NavBar = () => {
             </div>
           </Link>
 
+          <Link to="/the-station">
+            <div className="nav-bar-element link">
+              The station
+            </div>
+          </Link>
+
           <Link to="/statistics">
             <div className="nav-bar-element link">
               Statistics
@@ -37,12 +43,6 @@ const NavBar = () => {
           <Link to="/archive">
             <div className="nav-bar-element link">
               Archive
-            </div>
-          </Link>
-
-          <Link to="/the-station">
-            <div className="nav-bar-element link">
-              The station
             </div>
           </Link>
 
