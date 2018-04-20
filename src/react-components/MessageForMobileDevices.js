@@ -1,13 +1,10 @@
 import React from 'react'
-import WarningIcon from 'Images/warning.svg'
+import WarningIcon from 'Icons/warning.svg'
 
 const MessageForMobileDevices = () => {
-  const warningIcon = new Image();
-  warningIcon.src = WarningIcon;
-  
   return (
     <div className="centered-inline">
-      <img src={warningIcon.src} className="warning-icon" />&nbsp;
+      <img src={WarningIcon} className="icon" />&nbsp;
       This website is not optimized for mobile devices.
     </div>
   )

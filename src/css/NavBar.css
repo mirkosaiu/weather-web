@@ -39,7 +39,7 @@
         position: absolute;
         top: 17px;
 
-        background: -webkit-linear-gradient(#000, #00adff);
+        background: -webkit-linear-gradient(#1280d0, #00adff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

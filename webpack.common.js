@@ -29,6 +29,7 @@ module.exports = {
       Actions: path.resolve(__dirname, 'src/redux/actions'),
       Reducers: path.resolve(__dirname, 'src/redux/reducers'),
       Images: path.resolve(__dirname, 'src/images'),
+      Icons: path.resolve(__dirname, 'src/images/icons'),
       Main: path.resolve(__dirname, 'src')
     }
   },
