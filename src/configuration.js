@@ -1,8 +1,7 @@
 
 
 const Configuration = {
-  apiEndpoint: '0.0.0.0:8080',
-  apiEndpointDev: 'http://loadBalancer-1842252216.us-west-2.elb.amazonaws.com'
+  apiEndpoint: 'http://ec2-18-236-63-1.us-west-2.compute.amazonaws.com:8080'
 }
 
 

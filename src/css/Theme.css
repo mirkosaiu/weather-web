@@ -51,7 +51,7 @@ a {
   vertical-align: bottom;
 }
 
-.space {
+.space, space {
   display: block;
   height: 20px;
 }

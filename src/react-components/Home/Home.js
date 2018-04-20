@@ -6,6 +6,7 @@ import { fetchMeasurements } from 'Actions'
 import FacebookLoader from 'Components/FacebookLoader'
 import GenericLoading from 'Components/GenericLoading'
 import WeatherRightNow from 'Components/WeatherRightNow'
+import ClockIcon from 'Images/alarm-clock.svg'
 
 const mapStateToProps = state => {
   return { measurements: state.measurements.items}
@@ -20,7 +21,7 @@ class Home extends React.Component {
 
   render() {
     const dispatch = this.props.dispatch
-    // setTimeout(function() { dispatch(fetchMeasurements()); }, updateDelayInSecs*1000)
+    setTimeout(function() { dispatch(fetchMeasurements()); }, updateDelayInSecs*1000)
 
     const { measurements } = this.props
     const measurementsForGraph = measurements.sort((m1, m2) => {
@@ -53,9 +54,16 @@ class Home extends React.Component {
     }
 
 
+    const clockIcon = new Image();
+    clockIcon.src = ClockIcon;
+
+
     return (
       <div>
-        <div className="centered-inline">Data automatically updates every {updateDelayInSecs} seconds</div>
+        <div className="centered-inline">
+          <img src={clockIcon.src} className="warning-icon" />&nbsp;
+          Data automatically updates every {updateDelayInSecs} seconds
+        </div>
 
         <div className="space"/>
 

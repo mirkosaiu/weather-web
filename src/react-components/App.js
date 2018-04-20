@@ -32,7 +32,7 @@ const App = () => {
         <div className="main-box">
 
           <MobileView device={isMobile}>
-            <MessageForMobileDevices/>
+            <MessageForMobileDevices/><space/>
           </MobileView>
 
           <Switch>
