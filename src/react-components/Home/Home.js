@@ -12,7 +12,7 @@ const mapStateToProps = state => {
   return { measurements: state.measurements.items}
 }
 
-const updateDelayInSecs = 10
+const updateDelayInSecs = 8
 
 class Home extends React.Component {
   componentWillMount() {
