@@ -55,3 +55,20 @@ a {
   display: block;
   height: 20px;
 }
+
+
+.green-text {
+  color: green;
+}
+.orange-text {
+  color: orange;
+}
+.dark-orange-text {
+  color: orangered;
+}
+.red-text {
+  color: red;
+}
+.purple-text {
+  color: purple;
+}
