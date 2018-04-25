@@ -25,21 +25,24 @@ a {
   padding: 30px;
 }
 
-.main-box {
-  display: block;
-  width: 1024px;
-  margin: auto;
-  overflow: scroll;
-  padding: 20px;
+.black-box {
   background-color: rgba(0, 0, 0, 0.7);
+  display: block;
+  margin: auto;
+  width: 1024px;
+  padding: 20px;
   color: white;
   border-radius: 5px;
-  min-height: 750px;
 
+  .main-box {
+    min-height: 750px;
+  }
+  
   @media (max-width: 1024px) {
     width: auto;
   }
 }
+
 
 .centered-inline {
   text-align: center;

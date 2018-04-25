@@ -17,6 +17,7 @@ import Station from 'Components/Station';
 import PageNotFound from 'Components/PageNotFound';
 import MessageForMobileDevices from 'Components/MessageForMobileDevices';
 import NavBar from 'Components/NavBar';
+import Footer from 'Components/Footer';
 
 const loggerMiddleware = createLogger()
 const store = createStore(rootReducer, applyMiddleware(
@@ -30,7 +31,7 @@ const App = () => {
       <NavBar/>
 
       <div className="background">
-        <div className="main-box">
+        <div className="black-box main-box">
 
           <MobileView device={isMobile}>
             <MessageForMobileDevices/><space/>
@@ -44,6 +45,15 @@ const App = () => {
             <Route exact component={PageNotFound}/>
           </Switch>
 
+
+
+        </div>
+
+        <space/>
+
+
+        <div className="black-box">
+          <Footer/>
         </div>
       </div>
     </div>
