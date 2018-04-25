@@ -30,6 +30,7 @@ module.exports = {
       Reducers: path.resolve(__dirname, 'src/redux/reducers'),
       Images: path.resolve(__dirname, 'src/images'),
       Icons: path.resolve(__dirname, 'src/images/icons'),
+      WeatherIcons: path.resolve(__dirname, 'src/images/weather-icons'),
       Main: path.resolve(__dirname, 'src')
     }
   },
