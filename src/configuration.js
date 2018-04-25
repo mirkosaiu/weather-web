@@ -1,7 +1,7 @@
 
 
 const Configuration = {
-  apiEndpoint: 'http://WSLoadBalancer-1003950087.us-west-2.elb.amazonaws.com'
+  apiEndpoint: 'http://WSLoadBalancer-2078125252.us-west-2.elb.amazonaws.com'
 }
 
 
