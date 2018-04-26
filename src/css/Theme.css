@@ -34,15 +34,14 @@ a {
   color: white;
   border-radius: 5px;
 
-  .main-box {
-    min-height: 750px;
-  }
-  
   @media (max-width: 1024px) {
     width: auto;
   }
 }
 
+.main-box {
+  min-height: 750px;
+}
 
 .centered-inline {
   text-align: center;
