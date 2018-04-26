@@ -13,7 +13,7 @@ const WeatherRightNow = ({ temperature, luminosity, humidity, pressure, gas }) =
         <div className="measurements-preview-item-title">Luminosity</div>
         <div className="measurements-preview-item-title">Humidity</div>
         <div className="measurements-preview-item-title">Pressure</div>
-        <div className="measurements-preview-item-title">Pollution</div>
+        <div className="measurements-preview-item-title">Air pollution</div>
       </div>
       <div className="measurements-preview-measures">
         <div className="measurements-preview-item">{temperature} °C</div>

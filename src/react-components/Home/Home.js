@@ -77,7 +77,7 @@ class Home extends React.Component {
         { !!measurements && <MyChart title="Luminosity measurements" valuesY={luminosity} valuesX={dates} yAxisTitle="Luminosity" lineSeriesName="Lum" valueSuffix=""/> }
         { !!measurements && <MyChart title="Humidity measurements" valuesY={humidity} valuesX={dates} yAxisTitle="Humidity (%)" lineSeriesName="Hum" valueSuffix=" %"/> }
         { !!measurements && <MyChart title="Pressure measurements" valuesY={pressure} valuesX={dates} yAxisTitle="Pressure (hPa)" lineSeriesName="Pres" valueSuffix=" hPa"/> }
-        { !!measurements && <MyChart title="Pollution measurements" valuesY={gas} valuesX={dates} yAxisTitle="Pollution" lineSeriesName="Pol" valueSuffix=""/> }
+        { !!measurements && <MyChart title="Pollution measurements" valuesY={gas} valuesX={dates} yAxisTitle="Air pollution" lineSeriesName="Pol" valueSuffix=""/> }
       </div>
     )
   }
